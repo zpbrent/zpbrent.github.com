@@ -1,0 +1,58 @@
+1, For XSS:
+$_GET
+$_POST
+$_REQUEST
+$_SERVER['REQUEST_URI']
+$_SERVER['PHP_SELF']
+$_SERVER['HTTP_REFERER']
+$_COOKIE
+add_query_arg()
+remove_query_arg()
+
+2, For SQLi:
+$wpdb->query()
+$wpdb->get_var()
+$wpdb->get_row()
+$wpdb->get_col()
+$wpdb->get_results()
+$wpdb->replace()
+
+3, For RCE (OS Command):
+system()
+exec()
+passthru()
+shell_exec()
+
+4, For RCE (PHP code):
+eval()
+assert()
+preg_replace()
+php://input
+call_user_func()
+
+5, For PHP Object Injection:
+unserialize()
+maybe_unserialize()
+
+6, For File Inclusion/Upload/Download:
+include()
+require()
+include_once()
+require_once()
+fread()
+file()
+readfile()
+file_get_contents()
+move_uploaded_file()
+ZipArchive
+
+7, For Privilege Escalation:
+wp_set_current_user()
+update_option()
+do_action()
+wp_set_current_user
+
+8, For SSRF:
+wp_remote_get
+
+
